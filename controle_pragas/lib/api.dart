@@ -12,11 +12,13 @@ class ApiProduto {
       Uri.parse(
           'https://api.cnptia.embrapa.br/bioinsumos/v1/produtos-biologicos'),
       headers: {
-        'Authorization': 'Bearer 2f2daaaa-8ec4-3b9e-954f-2fb0f50cca9c',
+        'Authorization': 'Bearer 8944b803-e35c-3bb8-93f1-f6c32ad334c9',
         'Content-Type': 'application/json',
         'cache-control': 'max-age=10',
       },
     );
+
+    //fazer refreseh token
 
     if (response.statusCode == 200) {
       final json = utf8.decode(response.bodyBytes);

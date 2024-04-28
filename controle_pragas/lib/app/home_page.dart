@@ -92,7 +92,7 @@ class HomePage extends StatelessWidget {
                                       decoration: const BoxDecoration(
                                         shape: BoxShape.circle,
                                       ),
-                                      child: Image.asset('assets/ic-prod.png',
+                                      child: Image.asset('assets/ic-pest.png',
                                         fit: BoxFit.none,
                                       ),
                                     ),
@@ -108,46 +108,12 @@ class HomePage extends StatelessWidget {
                                               const EdgeInsetsDirectional.fromSTEB(
                                                   12, 0, 0, 0),
                                           child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.start,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              const Text('Registro: '),
-                                              Text(produto.registroProduto.toString(),
-                                                  style: ThemeApp
-                                                      .theme.textTheme.labelSmall
-                                                      ?.copyWith(
-                                                    color: ThemeApp
-                                                        .theme.colorScheme.secondary,
-                                                    fontWeight: FontWeight.bold,
-                                                  )),
-                                            ],
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  12, 0, 0, 0),
-                                          child: Row(
-                                            children: [
-                                              const Text('Nome comercial: '),
-                                              Text(produto.marcaComercial[0],
-                                                  style: ThemeApp
-                                                      .theme.textTheme.labelSmall
-                                                      ?.copyWith(
-                                                    color: ThemeApp
-                                                        .theme.colorScheme.secondary,
-                                                    fontWeight: FontWeight.bold,
-                                                  )),
-                                            ],
-                                          ),
-                                        ),
-                                        Padding(
-                                          padding:
-                                              const EdgeInsetsDirectional.fromSTEB(
-                                                  12, 0, 0, 0),
-                                          child: Row(
-                                            children: [
-                                              const Text('Nome Comum: '),
                                               SizedBox(
-                                                width: 120,
+                                                width: 170,
                                                 child: Text(
                                                     produto.pragas
                                                         .map(
